@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
+        }
+        .box {
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .box1 {
+            background-color: rgb(67, 67, 182);
+            grid-column: 1/4;   /*컬럼기준 1부터 4까지 .. 꼭지점 기준*/ 
+        }
+        .box2 {
+            background-color: rgb(122, 122, 26);
+            grid-row: 2/4;    /*행기준 2부터 4까지 .. 꼭지점 기준*/
+        }
+        .box3 {
+            background-color: rgb(45, 179, 67);
+            grid-row: 2;
+            grid-column: 2/4;
+        }
+        .box4 {
+            background-color: rgb(98, 40, 145);
+            grid-row: 3;
+            grid-column: 3/4;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+
+</body>
+</html>

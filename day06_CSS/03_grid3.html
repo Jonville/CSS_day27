@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #wrapper {
+            display: grid;  /*반응형*/
+            grid-template-columns: repeat(3, 200px) ; /*1:1:1 로 열을 만든다*/ 
+            grid-template-rows: minmax(100px, auto);   /*최소최대값을 설정*/
+            grid-gap: 20px 20px;
+        }
+
+        .items {
+             padding: 10px;
+             background-color: #eee;
+        }
+        .items:nth-child(odd) {
+            background-color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div id="wrapper">
+    <div class="items">All samples shall be properly labeled in order to ensure that the results can be traced back to the location from which it was collected. </div>
+    <div class="items">All samples shall be properly labeled in order to ensure that the results can be traced back to the location </div>
+    <div class="items">All samples shall be properly labeled in order to ensure that the results can be </div>
+    <div class="items">All samples shall be properly labeled in order to ensure </div>
+    <div class="items">All samples shall be properly </div>
+    </div>
+
+</body>
+</html>
